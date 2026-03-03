@@ -12,10 +12,14 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Install Dependencies
+      # We add 'working-directory' because your package.json is inside the 'rfci' folder
       run: npm install
+      working-directory: ./rfci
 
     - name: Build Project
+      # This ensures Vite builds from the correct sub-directory
       run: npm run build
+      working-directory: ./rfci
 
     - name: Sync Files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -23,5 +27,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
+        # Updated path to match where Vite actually puts the files
+        local-dir: ./rfci/dist/
         server-dir: ./public_html/
