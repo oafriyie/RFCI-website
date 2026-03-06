@@ -32,13 +32,27 @@ export default function Contact() {
     setError("");
 
     try {
+      // Send notification to organization
       await emailjs.send(
         EMAIL_CONFIG.SERVICE_ID,
         EMAIL_CONFIG.CONTACT_TEMPLATE_ID,
         {
           from_name: formData.name,
-          from_email: formData.email,
+          // always send from our official address so replies go to the correct mailbox
+          from_email: EMAIL_CONFIG.RECIPIENT_EMAIL,
           to_email: EMAIL_CONFIG.RECIPIENT_EMAIL,
+          subject: formData.subject,
+          message: formData.message,
+        }
+      );
+
+      // Send confirmation to user
+      await emailjs.send(
+        EMAIL_CONFIG.SERVICE_ID,
+        EMAIL_CONFIG.CONTACT_CONFIRMATION_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         }
@@ -115,7 +129,7 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-green-300 shrink-0" />
                     <div>
                       <p className="font-bold text-lg">Our Office</p>
-                      <p className="text-green-100">123 Agriculture Lane, North Legon,<br />Accra, Ghana</p>
+                      <p className="text-green-100">Julius Debrah Street, kwahu,<br />Obomeng, Ghana</p>
                     </div>
                   </div>
 
@@ -123,7 +137,7 @@ export default function Contact() {
                     <Phone className="w-6 h-6 text-green-300 shrink-0" />
                     <div>
                       <p className="font-bold text-lg">Phone</p>
-                      <p className="text-green-100">+233 24 000 0000</p>
+                      <p className="text-green-100">+23354 634 3126</p>
                     </div>
                   </div>
 
@@ -131,7 +145,7 @@ export default function Contact() {
                     <Mail className="w-6 h-6 text-green-300 shrink-0" />
                     <div>
                       <p className="font-bold text-lg">Email</p>
-                      <p className="text-green-100">info@rfci-ghana.org</p>
+                      <p className="text-green-100">info@rfcigh.com</p>
                     </div>
                   </div>
                 </div>

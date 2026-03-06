@@ -4,40 +4,40 @@ import { Link } from "react-router-dom";
 
 const PROGRAMS = [
   {
-    id: "healthcare",
-    title: "Healthcare Initiative",
-    desc: "NHIS-integrated mobile clinics bringing essential medical care to rural farming communities.",
-    icon: <Hospital className="w-8 h-8 text-green-600" />,
-  },
-  {
-    id: "vision-care",
-    title: "Vision Care",
-    desc: "Regular eye screening and prevention programs for farmers and their families.",
-    icon: <Eye className="w-8 h-8 text-green-600" />,
-  },
-  {
-    id: "school-care",
-    title: "School Care",
-    desc: "Bike to School Initiative promoting youth engagement and agricultural education.",
-    icon: <Bike className="w-8 h-8 text-green-600" />,
+    id: "agri-care",
+    title: "Agri Care (AC)",
+    desc: "Empowering smallholder farmers with modern improved farming methods and climate smart technologies. Flagship program 'Plant Today For Tomorrow' (PTFT) supports women and youth in agribusiness entrepreneurship.",
+    icon: <Leaf className="w-8 h-8 text-green-600" />,
   },
   {
     id: "disability-care",
-    title: "Disability Care",
-    desc: "Inclusive programs ensuring people with disabilities benefit from all our initiatives.",
+    title: "Disability Care (DC)",
+    desc: "Empowering persons with disabilities through assistive devices and economic opportunities for independent livelihoods. Built on our core value, Caring Without Borders (CWBs).",
     icon: <img src="/co.jpeg" alt="Disability Care" className="w-8 h-8 object-contain" />,
   },
   {
+    id: "healthcare",
+    title: "Health Care (HC)",
+    desc: "Delivering mobile health outreaches with free screening on Blood Pressure, Glucose tests, nutrition and health education. Special Unit: Meet the Counsellors.",
+    icon: <Hospital className="w-8 h-8 text-green-600" />,
+  },
+  {
     id: "lady-care",
-    title: "Lady Care",
-    desc: "Women-centered programs focusing on health, economic empowerment, and leadership.",
+    title: "Lady Care (LC)",
+    desc: "Supporting women and adolescent school girls challenged with period poverty through menstrual hygiene education and sanitary products to promote health and wellbeing.",
     icon: <Heart className="w-8 h-8 text-green-600" />,
   },
   {
-    id: "agri-care",
-    title: "Agri-Care",
-    desc: "Plant Today for Tomorrow Initiative supporting sustainable agricultural practices.",
-    icon: <Leaf className="w-8 h-8 text-green-600" />,
+    id: "school-care",
+    title: "School Care (SC)",
+    desc: "Supporting rural schools with teaching and learning materials. Includes Free-NHIS program and Bike2School Initiative providing bicycles for students to access education.",
+    icon: <Bike className="w-8 h-8 text-green-600" />,
+  },
+  {
+    id: "vision-care",
+    title: "Vision Care (VC)",
+    desc: "Improving eye health through free eye screenings, awareness campaigns, free reading glasses and access to affordable eye lenses in rural communities.",
+    icon: <Eye className="w-8 h-8 text-green-600" />,
   },
 ];
 
@@ -48,6 +48,9 @@ export default function Programs() {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-slate-800">Our Core Initiatives</h2>
           <div className="h-1 w-20 bg-green-500 mx-auto mt-4"></div>
+          <p className="mt-8 max-w-3xl mx-auto text-lg text-slate-700 leading-relaxed">
+            RFCI is transforming the lives of rural underserved populations through health, agriculture and other essential social supports services. Our tailored initiatives are designed to contribute to achieving the Sustainable Development Goals (SDGs) 1, 2, 3, 4, 5, 6, 10, 11, 13 and 17, empowering vulnerable groups, strengthening resilience and improving quality of life.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">

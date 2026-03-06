@@ -32,13 +32,27 @@ export default function VolunteerForm() {
     setError('');
 
     try {
+      // Send notification to organization
       await emailjs.send(
         EMAIL_CONFIG.SERVICE_ID,
         EMAIL_CONFIG.VOLUNTEER_TEMPLATE_ID,
         {
           from_name: formData.name,
-          from_email: formData.email,
+          // send from our official info address
+          from_email: EMAIL_CONFIG.RECIPIENT_EMAIL,
           to_email: EMAIL_CONFIG.RECIPIENT_EMAIL,
+          volunteer_type: formData.volunteerType,
+          message: formData.message,
+        }
+      );
+
+      // Send confirmation to user
+      await emailjs.send(
+        EMAIL_CONFIG.SERVICE_ID,
+        EMAIL_CONFIG.VOLUNTEER_CONFIRMATION_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
           volunteer_type: formData.volunteerType,
           message: formData.message,
         }

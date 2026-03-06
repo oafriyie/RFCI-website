@@ -6,7 +6,9 @@ import emailjs from '@emailjs/browser';
 export const EMAIL_CONFIG = {
   SERVICE_ID: 'service_rfci',
   CONTACT_TEMPLATE_ID: 'template_rfci_contact',
+  CONTACT_CONFIRMATION_TEMPLATE_ID: 'template_rfci_contact_confirmation',
   VOLUNTEER_TEMPLATE_ID: 'template_rfci_volunteer',
+  VOLUNTEER_CONFIRMATION_TEMPLATE_ID: 'template_rfci_volunteer_confirmation',
   DONATION_TEMPLATE_ID: 'template_rfci_donation',
   PUBLIC_KEY: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '',
   // The address that should receive all form submissions and notifications

@@ -69,10 +69,11 @@ export default function Donate() {
         EMAIL_CONFIG.SERVICE_ID,
         EMAIL_CONFIG.DONATION_TEMPLATE_ID,
         {
+          // send receipt from our official address
+          from_email: EMAIL_CONFIG.RECIPIENT_EMAIL,
           to_email: email,
           donor_email: email,
           payment_method: method,
-          // you can add other variables (amount, date) if template expects them
         }
       );
 
@@ -81,6 +82,7 @@ export default function Donate() {
         EMAIL_CONFIG.SERVICE_ID,
         EMAIL_CONFIG.DONATION_TEMPLATE_ID,
         {
+          from_email: EMAIL_CONFIG.RECIPIENT_EMAIL,
           to_email: EMAIL_CONFIG.RECIPIENT_EMAIL,
           donor_email: email,
           payment_method: method,

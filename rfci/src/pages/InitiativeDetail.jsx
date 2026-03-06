@@ -4,12 +4,12 @@ import { Hospital, Eye, Bike, Heart, Leaf, Users, ArrowRight, ArrowLeft } from "
 
 const INITIATIVES = {
   healthcare: {
-    title: "Healthcare Initiative",
-    subtitle: "NHIS-Integrated Rural Healthcare",
+    title: "Health Care (HC)",
+    subtitle: "Mobile Health Outreaches for Rural Communities",
     icon: <Hospital className="w-12 h-12 text-green-600" />,
-    description: "NHIS-integrated mobile clinics providing comprehensive healthcare services to remote farming communities. Regular health screenings, maternal care, and disease prevention.",
-    fullDescription: "Our Healthcare Initiative brings quality medical services directly to rural farming communities through well-equipped mobile clinics. We partner with the National Health Insurance Scheme (NHIS) to ensure families have access to affordable, quality healthcare.",
-    features: ["NHIS Coverage", "Mobile Clinics", "Maternal Care", "Disease Prevention", "Health Education"],
+    description: "Delivering mobile health outreaches that provides free screening on Blood Pressure, Glucose tests etc, nutrition and health education and referrals for further health attention since most rural residents delay health care due to cost, distance, etc.",
+    fullDescription: "Under the Health Care is a Special Unit called, Meet the Counsellors. Our Healthcare Initiative brings quality mobile health outreach services directly to rural farming communities, providing comprehensive health screenings and education. We ensure families have access to affordable, quality healthcare including blood pressure and glucose testing, nutrition guidance, and necessary health referrals.",
+    features: ["Mobile Clinics", "Free Screening", "Health Education", "Disease Prevention", "Health Referrals", "Meet the Counsellors"],
     impact: "Improved health access for 5,000+ rural families.",
     stats: [
       { label: "Clinics Organized", value: "50+" },
@@ -23,12 +23,12 @@ const INITIATIVES = {
     ]
   },
   "vision-care": {
-    title: "Vision Care Program",
-    subtitle: "Eye Health for Rural Communities",
+    title: "Vision Care (VC)",
+    subtitle: "Eye Health for Everyone in Rural Communities",
     icon: <Eye className="w-12 h-12 text-green-600" />,
-    description: "Regular eye screening campaigns and vision correction programs ensuring farmers and students have access to quality eye care.",
-    fullDescription: "Vision Care is essential for our farmers' productivity and students' academic success. Our program provides comprehensive eye screenings and vision correction services to rural communities.",
-    features: ["Eye Screening", "Vision Correction", "School Programs", "Prevention Workshops"],
+    description: "Improving eye health in rural communities through free eye screenings, awareness campaigns, free reading glasses and access to affordable eye lenses.",
+    fullDescription: "Under Vision Care, RFCI seeks to contribute to making eye health readily available, accessible, and affordable for everyone. Our program provides comprehensive eye screenings and vision correction services to rural communities. Vision Care is essential for our farmers' productivity and students' academic success.",
+    features: ["Free Eye Screenings", "Awareness Campaigns", "Free Reading Glasses", "Affordable Eye Lenses", "School Programs"],
     impact: "Provided glasses to 1,200+ individuals.",
     stats: [
       { label: "Eye Screenings", value: "1,200+" },
@@ -42,12 +42,12 @@ const INITIATIVES = {
     ]
   },
   "school-care": {
-    title: "School Care - Bike to School Initiative",
-    subtitle: "Youth Engagement & Transportation",
+    title: "School Care (SC)",
+    subtitle: "Essential Support for Rural Schools and Students",
     icon: <Bike className="w-12 h-12 text-green-600" />,
-    description: "Promoting youth engagement and agricultural education through bike distribution programs for school children in rural areas.",
-    fullDescription: "The Bike to School Initiative tackles two critical challenges: student transportation and youth agricultural engagement. By providing bikes, we enable better school attendance while fostering interest in sustainable agriculture.",
-    features: ["Bike Distribution", "Youth Education", "Agricultural Training", "Community Engagement"],
+    description: "Supporting rural schools with teaching, learning materials and other essential supports. Under the School Care is the Free-NHIS, which enrols pupils on the National Health Insurance Scheme policy to ensure access to basic healthcare. Also, the byke2School, which provides bicycles to pupils who trek long hours to access basic education.",
+    fullDescription: "School Care provides comprehensive support to rural schools and students. Our Free-NHIS program enrolls pupils on the National Health Insurance Scheme policy to ensure access to basic healthcare. The Bike2School Initiative provides bicycles to pupils who trek long hours to access basic education, improving school attendance and reducing educational barriers.",
+    features: ["Teaching Materials", "Learning Resources", "Free-NHIS Program", "Bike2School Program", "Community Learning Support"],
     impact: "Supported 800+ students with school transportation.",
     stats: [
       { label: "Bikes Distributed", value: "800+" },
@@ -61,12 +61,12 @@ const INITIATIVES = {
     ]
   },
   "disability-care": {
-    title: "Disability Care Program",
-    subtitle: "Inclusive Development for All",
+    title: "Disability Care (DC)",
+    subtitle: "Empowering Persons with Disabilities",
     icon: <Users className="w-12 h-12 text-green-600" />,
-    description: "Inclusive programs ensuring people with disabilities benefit from healthcare, economic opportunities, and social support.",
-    fullDescription: "We believe everyone deserves equal opportunities. Our Disability Care Program ensures that people with disabilities are fully integrated into all our initiatives and have access to specialized support.",
-    features: ["Inclusive Services", "Accessibility Programs", "Economic Support", "Social Integration"],
+    description: "Empowering persons with disabilities through assistive devices and economic opportunities for independent livelihoods to promote equity, diversity and inclusivity. This initiative is built on one of RFCIs core values, Caring Without Borders (CWBs).",
+    fullDescription: "Our Disability Care Program is built on one of RFCI's core values, Caring Without Borders (CWBs). We provide assistive devices and create economic opportunities for persons with disabilities, ensuring independent livelihoods and promoting equity, diversity and inclusivity. We believe everyone deserves equal opportunities and the ability to participate fully in community life.",
+    features: ["Assistive Devices", "Economic Opportunities", "Independent Livelihoods", "Inclusivity Programs", "Equity & Diversity"],
     impact: "Empowered 300+ people with disabilities.",
     stats: [
       { label: "People Supported", value: "300+" },
@@ -80,12 +80,12 @@ const INITIATIVES = {
     ]
   },
   "lady-care": {
-    title: "Lady Care Program",
-    subtitle: "Women Empowerment & Health",
+    title: "Lady Care (LC)",
+    subtitle: "Supporting Women and Adolescent School Girls",
     icon: <Heart className="w-12 h-12 text-green-600" />,
-    description: "Women-centered initiatives focusing on health, economic empowerment, leadership development, and family welfare.",
-    fullDescription: "Lady Care recognizes the critical role women play in rural communities. Our comprehensive program addresses health needs, economic security, leadership development, and family well-being.",
-    features: ["Health Programs", "Economic Empowerment", "Leadership Training", "Family Support"],
+    description: "Supporting women and adolescent school girls challenged with period poverty with menstrual hygiene education and menstrual sanitary products to promote good health and wellbeing, boost confidence, improve school attendance, performance, etc.",
+    fullDescription: "Lady Care recognizes the critical challenges women and adolescent girls face in rural communities. Our comprehensive program addresses period poverty through menstrual hygiene education and provision of menstrual sanitary products. This support promotes good health and wellbeing, boosts confidence, improves school attendance, and enhances academic performance for school girls.",
+    features: ["Menstrual Hygiene Education", "Sanitary Products", "Health & Wellbeing", "School Support", "Confidence Building"],
     impact: "Supported 2,000+ women with health and livelihood programs.",
     stats: [
       { label: "Women Supported", value: "2,000+" },
@@ -99,12 +99,12 @@ const INITIATIVES = {
     ]
   },
   "agri-care": {
-    title: "Agri-Care - Plant Today for Tomorrow",
-    subtitle: "Sustainable Agriculture Initiative",
+    title: "Agri Care (AC)",
+    subtitle: "Plant Today For Tomorrow - Farming for Sustainable Income",
     icon: <Leaf className="w-12 h-12 text-green-600" />,
-    description: "Sustainable agricultural practices promoting long-term food security and environmental stewardship for future generations.",
-    fullDescription: "Agri-Care embodies our long-term vision for rural prosperity. By promoting sustainable farming practices, we ensure food security today while protecting resources for tomorrow's generations.",
-    features: ["Sustainable Farming", "Soil Health", "Climate Resilience", "Youth Engagement"],
+    description: "Empowering smallholder farmers with modern improved farming methods including climate smart technologies to contribute to productivity and increase income. Under the Agri Care, is its flagship agriculture program 'Plant Today For Tomorrow' (PTFT), which supports women, youth etc. to venture into agribusiness, entrepreneurship etc. to earn a sustainable income, reduce migration and contribute to food security.",
+    fullDescription: "Agri Care embodies our vision for rural prosperity through sustainable agriculture. We empower smallholder farmers with modern farming methods including climate-smart technologies. Our flagship agriculture program, 'Plant Today For Tomorrow' (PTFT), supports women and youth in ventures into agribusiness and entrepreneurship to earn sustainable income, reduce migration, and contribute to food security.",
+    features: ["Modern Farming Methods", "Climate Smart Technologies", "Plant Today For Tomorrow (PTFT)", "Agribusiness Training", "Sustainable Income", "Food Security"],
     impact: "Helped farmers adopt sustainable practices on 3,000+ acres.",
     stats: [
       { label: "Acres Managed", value: "3,000+" },

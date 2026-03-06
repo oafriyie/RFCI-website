@@ -12,14 +12,14 @@ import MeetTheTeam from "./pages/MeetTheTeam";
 import WhatsNew from "./pages/WhatsNew";
 import InitiativeDetail from "./pages/InitiativeDetail";
 import { motion } from "framer-motion";
-import { MapPin, Mail, ArrowLeft } from "lucide-react";
+import { MapPin, Mail, ArrowLeft, Facebook, Youtube, Linkedin } from "lucide-react";
 
 const Home = () => (
   <>
     <Hero />
     <Programs />
     <SuccessStories />
-    <section className="py-24 bg-green-600 text-white text-center">
+    <section className="py-8 bg-green-600 text-white text-center">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-black mb-8">Ready to make a real difference?</h2>
         <Link 
@@ -34,7 +34,7 @@ const Home = () => (
 );
 
 const JoinUs = () => (
-  <section className="py-16 md:py-24 bg-white min-h-screen">
+  <section className="py-8 md:py-24 bg-white min-h-screen">
     <div className="container mx-auto px-6">
       <Link to="/" className="inline-flex items-center text-green-600 font-bold mb-10 transition-all duration-200 gap-2 hover:gap-3">
         <ArrowLeft size={20} /> Back to Home
@@ -78,11 +78,47 @@ function App() {
         <Route path="/team" element={<MeetTheTeam />} />
         <Route path="/what-new" element={<WhatsNew />} />
       </Routes>
-      <footer className="bg-slate-900 text-white py-16 text-center">
+      <footer className="bg-slate-900 text-white py-8">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-black text-green-400">RFCI</h2>
-          <p className="mt-4 text-slate-400 max-w-md mx-auto">Rural Farmer Care Initiative: Sustainable agriculture and rural health.</p>
-          <div className="mt-10 pt-8 border-t border-slate-800 text-sm text-slate-500">© 2026 RFCI. All rights reserved.</div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-6">
+              <h2 className="text-3xl font-black text-green-400">RFCI</h2>
+              <p className="mt-2 text-slate-400 max-w-md mx-auto">Rural Farmer Care Initiative: Sustainable agriculture and rural health.</p>
+            </div>
+            
+            {/* Social Media Links */}
+            <div className="flex justify-center gap-6 mb-6">
+              <a 
+                href="https://web.facebook.com/TheFarmerNeedsCARE" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-slate-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                title="Follow us on Facebook"
+              >
+                <Facebook className="w-6 h-6 text-white" />
+              </a>
+              <a 
+                href="https://www.youtube.com/@rfci" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-slate-800 hover:bg-red-600 rounded-full flex items-center justify-center transition-colors"
+                title="Subscribe to our YouTube channel"
+              >
+                <Youtube className="w-6 h-6 text-white" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/notifications/?filter=all" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-slate-800 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"
+                title="Connect with us on LinkedIn"
+              >
+                <Linkedin className="w-6 h-6 text-white" />
+              </a>
+            </div>
+
+            <div className="pt-8 border-t border-slate-800 text-center text-sm text-slate-500">© 2026 RFCI. All rights reserved.</div>
+          </div>
         </div>
       </footer>
     </div>
