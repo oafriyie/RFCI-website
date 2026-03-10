@@ -8,7 +8,16 @@ const HERO_IMAGES = [
   { src: "/co.jpeg" },
   { src: "/ff.jpeg" },
   { src: "/ss.jpeg" },
-  { src: "/group.jpeg" }
+  { src: "/group.jpeg" },
+   { src: "/bike1.jpeg" },
+    { src: "/bike2.jpeg" },
+     { src: "/m2.jpg" },
+  { src: "/m2.jpeg" },
+  { src: "/m3.jpeg" },
+  { src: "/m4.jpeg" },
+  { src: "/m5.jpeg" },
+   { src: "/m6.jpeg" },
+    { src: "/m7.jpeg" }
 ];
 
 export default function Hero() {

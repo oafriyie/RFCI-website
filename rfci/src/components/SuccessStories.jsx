@@ -5,16 +5,16 @@ import 'swiper/css/pagination';
 
 const STORIES = [
   {
-    name: "Kofi Mensah",
-    role: "Maize Farmer",
-    text: "Before RFCI, I struggled with soil quality. Their training helped me double my yield in just one season.",
-    img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400"
+    name: "Young Man",
+    role: "Hearing Aid Recipient",
+    text: "Handing over hearing aid to the young man has transformed his ability to communicate and participate in community activities.",
+    img: "/dee.jpeg"
   },
   {
-    name: "Amina Yusuf",
-    role: "Vegetable Farmer",
-    text: "The medical outreach program cured my persistent fever, allowing me to return to my farm stronger than ever.",
-    img: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?auto=format&fit=crop&w=400"
+    name: "Young Man",
+    role: "Disability Care UEW",
+    text: "Through RFCI's Disability Care program at UEW, I've received the support and resources needed to thrive and contribute to my community.",
+    img: "/u1.jpeg"
   }
 ];
 

@@ -19,7 +19,10 @@ const INITIATIVES = {
     gallery: [
       { type: "image", src: "/LadyCare.jpg", title: "Mobile Clinic" },
       { type: "image", src: "/freenhis.jpg", title: "Health Screening" },
-      { type: "image", src: "/group.jpeg", title: "Community Health Camp" }
+      { type: "image", src: "/group.jpeg", title: "Community Health Camp" },
+      { type: "image", src: "/h.jpeg", title: "Health Outreach" },
+      { type: "image", src: "/h2.jpeg", title: "Medical Services" },
+      { type: "image", src: "/h3.jpeg", title: "Health Education" }
     ]
   },
   "vision-care": {
@@ -36,9 +39,13 @@ const INITIATIVES = {
       { label: "Communities Reached", value: "45+" }
     ],
     gallery: [
-      { type: "image", src: "/VisionCare.jpg", title: "Eye Screening Program" },
-      { type: "image", src: "/freenhis.jpg", title: "Vision Testing" },
-      { type: "image", src: "/LadyCare.jpg", title: "Community Outreach" }
+      { type: "image", src: "/visionlogo.jpeg", title: "Vision Care Logo" },
+      { type: "image", src: "/vision1.jpeg", title: "Eye Screening Program" },
+      { type: "image", src: "/vision2.jpeg", title: "Vision Testing" },
+      { type: "image", src: "/vision3.jpeg", title: "Community Outreach" },
+      { type: "image", src: "/vision4.jpeg", title: "Eye Health Awareness" },
+      { type: "image", src: "/m1.jpeg", title: "Mobile Clinic" },
+      { type: "image", src: "/m2.jpeg", title: "Health Education" }
     ]
   },
   "school-care": {
@@ -57,7 +64,8 @@ const INITIATIVES = {
     gallery: [
       { type: "image", src: "/group.jpeg", title: "Bike Distribution Event" },
       { type: "image", src: "/LadyCare.jpg", title: "Students with Bikes" },
-      { type: "image", src: "/freenhis.jpg", title: "School Engagement" }
+      { type: "image", src: "/freenhis.jpg", title: "School Engagement" },
+      { type: "image", src: "/sc1.jpeg", title: "Educational Support" }
     ]
   },
   "disability-care": {
@@ -76,7 +84,12 @@ const INITIATIVES = {
     gallery: [
       { type: "image", src: "/co.jpeg", title: "Community Program" },
       { type: "image", src: "/group.jpeg", title: "Inclusive Event" },
-      { type: "image", src: "/VisionCare.jpg", title: "Support Session" }
+      { type: "image", src: "/VisionCare.jpg", title: "Support Session" },
+      { type: "image", src: "/dis.jpeg", title: "Disability Support" },
+      { type: "image", src: "/u1.jpeg", title: "Amina Yusuf - Disability Care UEW" },
+      { type: "image", src: "/u2.jpeg", title: "Disability Care Program" },
+      { type: "image", src: "/u3.jpeg", title: "UEW Support" },
+      { type: "image", src: "/u4.jpeg", title: "Inclusive Education" }
     ]
   },
   "lady-care": {
@@ -95,7 +108,12 @@ const INITIATIVES = {
     gallery: [
       { type: "image", src: "/LadyCare.jpg", title: "Women Empowerment Meeting" },
       { type: "image", src: "/group.jpeg", title: "Leadership Training" },
-      { type: "image", src: "/freenhis.jpg", title: "Health Program" }
+      { type: "image", src: "/freenhis.jpg", title: "Health Program" },
+      { type: "image", src: "/l1.jpeg", title: "Women's Health Initiative" },
+      { type: "image", src: "/l2.jpeg", title: "Community Support" },
+      { type: "image", src: "/l3.jpeg", title: "Education Programs" },
+      { type: "image", src: "/l4.jpeg", title: "Empowerment Activities" },
+      { type: "image", src: "/l5.jpeg", title: "Skill Development" }
     ]
   },
   "agri-care": {
@@ -114,7 +132,9 @@ const INITIATIVES = {
     gallery: [
       { type: "image", src: "/freenhis.jpg", title: "Sustainable Farming" },
       { type: "image", src: "/group.jpeg", title: "Farmer Training" },
-      { type: "image", src: "/VisionCare.jpg", title: "Crop Innovation" }
+      { type: "image", src: "/VisionCare.jpg", title: "Crop Innovation" },
+      { type: "image", src: "/m3.jpeg", title: "Agricultural Development" },
+      { type: "image", src: "/m6.jpeg", title: "Farm Management" }
     ]
   }
 };

@@ -7,7 +7,7 @@ const PROGRAMS = [
     id: "agri-care",
     title: "Agri Care (AC)",
     desc: "Empowering smallholder farmers with modern improved farming methods and climate smart technologies. Flagship program 'Plant Today For Tomorrow' (PTFT) supports women and youth in agribusiness entrepreneurship.",
-    icon: <Leaf className="w-8 h-8 text-green-600" />,
+    icon: <img src="/agri.jpeg" alt="Agri Care" className="w-8 h-8 object-contain" />,
   },
   {
     id: "disability-care",
@@ -55,7 +55,7 @@ export default function Programs() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {PROGRAMS.map((p, i) => (
-            <Link key={i} to={`/programs/${p.id}` || '#'}>
+            <Link key={i} to={`/programs/${p.id}`}>
               <motion.div 
                 whileHover={{ y: -10 }}
                 className="p-8 rounded-2xl border border-slate-100 hover:border-green-200 hover:shadow-xl transition-all cursor-pointer h-full"
@@ -65,7 +65,30 @@ export default function Programs() {
                     className="w-full h-40 bg-cover bg-center rounded-2xl mb-6"
                     style={{ backgroundImage: 'url(/co.jpeg)' }}
                   />
-                ) : p.id === 'vision-care' ? (
+                ) : p.id === 'agri-care' ? (
+                  <div
+                    className="w-full h-40 bg-cover bg-center rounded-2xl mb-6"
+                    style={{ backgroundImage: 'url(/agri.jpeg)' }}
+                  />
+                ) : p.id === 'healthcare' ? (
+                  <div
+                    className="w-full h-40 bg-cover bg-center rounded-2xl mb-6"
+                    style={{ backgroundImage: 'url(/h.jpeg)' }}
+                  />
+                ) : p.id === 'lady-care' ? (
+                  <div
+                    className="w-full h-40 bg-cover bg-center rounded-2xl mb-6"
+                    style={{ backgroundImage: 'url(/l2.jpeg)' }}
+                  />
+                ) : p.id === 'school-care' ? (
+                  <div
+                    className="w-full h-40 bg-cover bg-center rounded-2xl mb-6"
+                    style={{ backgroundImage: 'url(/sc1.jpeg)' }}
+                  />                ) : p.id === 'healthcare' ? (
+                  <div
+                    className="w-full h-40 bg-cover bg-center rounded-2xl mb-6"
+                    style={{ backgroundImage: 'url(/hi.jpeg)' }}
+                  />                ) : p.id === 'vision-care' ? (
                   <div
                     className="w-full h-40 bg-cover bg-center rounded-2xl mb-6"
                     style={{ backgroundImage: 'url(/vvv.jpeg)' }}

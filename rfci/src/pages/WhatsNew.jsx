@@ -4,69 +4,14 @@ import { Calendar, MapPin, Users, ArrowRight } from "lucide-react";
 const STORIES_AND_EVENTS = [
   {
     id: 1,
-    type: "Success Story",
-    title: "Farmers in Kwahu See 40% Crop Yield Increase",
-    description: "Through our sustainable farming initiatives, smallholder farmers in the Kwahu region have successfully increased their crop yields by 40% in just one season.",
+    type: "Event",
+    title: "UP COMING INITIATIVES - Earn a Skill",
+    description: "Discover new opportunities to learn and grow with our upcoming skill-building programs designed to empower individuals in rural communities",
     date: "March 1, 2026",
     location: "Kwahu Mpraeso",
-    image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=600",
-    content: "Working with local farmers, RFCI introduced improved soil management techniques and climate-resilient seed varieties. The results speak for themselves - higher yields, better incomes, and more sustainable farming practices.",
-    category: "Agriculture"
-  },
-  {
-    id: 2,
-    type: "Event",
-    title: "Mobile Health Clinic Visits Northern Region",
-    description: "Our mobile health clinic conducted comprehensive health screenings for over 500 families in the Northern Region community.",
-    date: "February 28, 2026",
-    location: "Northern Region",
-    image: "https://images.unsplash.com/photo-1576089172869-4f5f6f315620?auto=format&fit=crop&w=600",
-    content: "The clinic provided free health checks, maternal care services, and health education. Community members received information on disease prevention and access to NHIS services.",
-    category: "Healthcare"
-  },
-  {
-    id: 3,
-    type: "Success Story",
-    title: "Lady Care Program Empowers 200 Women",
-    description: "Our Lady Care initiative has successfully trained and supported 200 women in economic empowerment and leadership development.",
-    date: "February 25, 2026",
-    location: "Multiple Communities",
-    image: "https://images.unsplash.com/photo-1494888286974-455935dac288?auto=format&fit=crop&w=600",
-    content: "Women participants have started micro-businesses, gained financial literacy, and are now leading community development efforts. The impact extends to their families and entire communities.",
-    category: "Women Empowerment"
-  },
-  {
-    id: 4,
-    type: "Event",
-    title: "Bike to School Initiative Launches",
-    description: "RFCI launched the Bike to School Initiative, distributing 200 bikes to students in rural communities to improve school attendance.",
-    date: "February 20, 2026",
-    location: "Ashanti Region",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600",
-    content: "Students now have reliable transportation to school, resulting in improved attendance rates and engagement. The initiative also promotes youth interest in agricultural practices.",
-    category: "Education"
-  },
-  {
-    id: 5,
-    type: "Success Story",
-    title: "Vision Care Program Provides Glasses to 1,200+",
-    description: "Through our vision care initiative, over 1,200 individuals received free eye screenings and corrective glasses.",
-    date: "February 18, 2026",
-    location: "Western Region",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600",
-    content: "Improved vision has enhanced productivity for farmers and learning outcomes for students. Many beneficiaries expressed gratitude for regained independence.",
-    category: "Healthcare"
-  },
-  {
-    id: 6,
-    type: "Event",
-    title: "Community Forum on Sustainable Agriculture",
-    description: "RFCI organized a grassroots forum bringing together 150 farmers to discuss sustainable agricultural practices and climate resilience.",
-    date: "February 15, 2026",
-    location: "Volta Region",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600",
-    content: "Farmers shared experiences, learned from each other, and collectively developed community-based solutions to agricultural challenges. Strong partnerships were formed.",
-    category: "Agriculture"
+    image: "/up.jpeg",
+    content: "RFCI is launching comprehensive skill-building programs tailored for rural communities. These initiatives will provide training in various vocational skills, entrepreneurship, digital literacy, and sustainable practices. Participants will gain practical knowledge and certifications that open doors to better employment opportunities and economic independence. Join us in empowering the next generation of skilled professionals in rural areas.",
+    category: "Skill Development"
   }
 ];
 
@@ -104,12 +49,7 @@ export default function WhatsNew() {
               >
                 <div className="grid md:grid-cols-3 gap-0">
                   {/* Image */}
-                  <div className="md:col-span-1 h-64 md:h-auto overflow-hidden bg-slate-200">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
+                  <div className="md:col-span-1 h-64 md:h-auto overflow-hidden bg-slate-200" style={{ backgroundImage: 'url(/up.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                   </div>
 
                   {/* Content */}
